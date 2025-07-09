@@ -4,9 +4,9 @@ if [ -f /flag.sh ]; then
     source /flag.sh
 fi
 
-if [ -f /requirements.txt ]; then
-    pip install -r /requirements.txt -i https://mirror.nju.edu.cn/pypi/web/simple/ && rm -f /app/requirements.txt
-fi
+#if [ -f /requirements.txt ]; then
+#    pip install -r /requirements.txt -i https://mirror.nju.edu.cn/pypi/web/simple/ && rm -f /app/requirements.txt
+#fi
 
 if [ -f /challenges.py ]; then
     python /challenges.py

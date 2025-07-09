@@ -11,6 +11,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.nju.edu.cn/g' /etc/apk/repositories
     && mv /tmp/challenges.py /challenges.py \
     && mv /tmp/requirements.txt /requirements.txt \
     && mkdir -p /www && mkdir -p /www/files/ \
+    && pip install -r /requirements.txt -i https://mirror.nju.edu.cn/pypi/web/simple/ && rm -f /app/requirements.txt \
     && mv /tmp/docker-entrypoint /usr/local/bin/docker-entrypoint \
     && chmod +x /usr/local/bin/docker-entrypoint
 
